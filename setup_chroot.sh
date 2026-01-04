@@ -99,9 +99,6 @@ configurar_usuario_chroot() {
 # Configuración Chroot para $usuario
 Match User $usuario
     ChrootDirectory $chroot_dir
-    ForceCommand internal-sftp
-    AllowTcpForwarding no
-    X11Forwarding no
 EOF
         echo -e "${GREEN}Configuración SSH añadida para $usuario${NC}"
     else
